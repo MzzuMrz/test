@@ -15,12 +15,10 @@ connectDB();
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// Rutas (aquí podrías añadir las rutas de tu aplicación)
-// Por ejemplo:
+
 const userRoutes = require('./app/routes/userRoutes');
 const categoriesRoutes = require('./app/routes/categoriesRoutes');
 
